@@ -1,28 +1,26 @@
-# MNIST-Handwritten-Digit-Classification-with-PyTorch
+🧠 MNIST Handwritten Digit Recognition using PyTorch
 
-🧠 Handwritten Digit Recognition using PyTorch (MNIST)
+This project implements a handwritten digit recognition system using PyTorch and the MNIST dataset. A fully connected neural network (MLP) is trained to classify grayscale images of handwritten digits (0–9).
 
-This project implements a handwritten digit classification system using PyTorch and the MNIST dataset. A fully connected neural network is trained to recognize digits (0–9) from grayscale images of size 28×28 pixels.
+The project demonstrates the complete deep learning workflow including data loading, model creation, training, evaluation, visualization, and single-image prediction.
 
-The model is trained using CrossEntropy Loss and the Adam optimizer, achieving reliable accuracy on the MNIST test dataset. The project also includes model saving, evaluation on unseen data, and single-image prediction with visualization.
+📌 Features
 
-🚀 Features
+MNIST handwritten digit dataset
 
-Uses the MNIST handwritten digit dataset
+Fully connected neural network (MLP)
 
-Fully connected neural network (MLP) architecture
+GPU acceleration (CUDA support if available)
 
-GPU acceleration support (CUDA if available)
-
-Training and evaluation loops implemented from scratch
+Training and evaluation loops
 
 Test accuracy calculation
 
-Model persistence using torch.save
+Model saving using torch.save()
 
-Visualization of predictions using Matplotlib
+Single image prediction
 
-Single image inference support
+Visualization using Matplotlib
 
 🛠 Tech Stack
 
@@ -34,16 +32,12 @@ Torchvision
 
 Matplotlib
 
-📂 Model Architecture
-
-Input Layer: 784 neurons (28×28 pixels)
-
-Hidden Layer 1: 128 neurons + ReLU
-
-Hidden Layer 2: 64 neurons + ReLU
-
-Output Layer: 10 neurons (digits 0–9)
-
+🧠 Model Architecture
+Layer	Description
+Input Layer	784 neurons (28×28 pixels)
+Hidden Layer 1	128 neurons + ReLU
+Hidden Layer 2	64 neurons + ReLU
+Output Layer	10 neurons (digits 0–9)
 📊 Dataset
 
 MNIST Handwritten Digits Dataset
@@ -52,24 +46,64 @@ MNIST Handwritten Digits Dataset
 
 10,000 test images
 
-Grayscale images (28×28)
+Image size: 28×28 (grayscale)
+
+🚀 How to Run
+1️⃣ Install Dependencies
+pip install torch torchvision matplotlib
+2️⃣ Run the Training Script
+python train.py
+
+The MNIST dataset will automatically download on the first run.
+
+📈 Training Output
+
+Prints loss for each epoch
+
+Evaluates accuracy on the test dataset
+
+Saves the trained model as:
+
+mnist_model.pth
+🖼 Sample Prediction
+
+The program:
+
+Displays a test image
+
+Shows the actual label
+
+Predicts the digit using the trained model
 
 📌 Use Cases
 
 Beginner-friendly deep learning project
 
-Understanding PyTorch training pipelines
+Learning PyTorch training pipelines
 
 Image classification fundamentals
 
 Baseline model for computer vision tasks
 
-📈 Future Improvements
+🔮 Future Improvements
 
-Convert MLP to CNN for higher accuracy
+Replace MLP with CNN for higher accuracy
 
 Add training loss and accuracy graphs
 
 Implement confusion matrix
 
-Build a GUI or web interface for live digit prediction
+Build GUI or web app for live digit drawing
+
+Hyperparameter tuning
+
+👤 Author
+
+Thakor Harshad Mahendraji
+M.Sc. Environmental Science | Aspiring Data Scientist
+
+⭐ Acknowledgements
+
+MNIST Dataset
+
+PyTorch Documentation
