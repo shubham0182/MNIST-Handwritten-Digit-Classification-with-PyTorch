@@ -99,8 +99,8 @@ Hyperparameter tuning
 
 👤 Author
 
-Thakor Harshad Mahendraji
-M.Sc. Environmental Science | Aspiring Data Scientist
+Thakor Shubham Mahendraji
+Data Scientist
 
 ⭐ Acknowledgements
 
